@@ -10,6 +10,9 @@ if (!$result) {
   exit;
 }
 
+//echo "$row[0] - $row[1] - $row[2] - $row[3] - $row[4] - $row[5] - $row[6] - $row[7] - $row[8] - $row[9] - $row[10] - $row[11] - $row[12]";
+//echo "<br />\n";
+
 ?>
 
 <!DOCTYPE HTML>
@@ -108,9 +111,7 @@ if (!$result) {
 
 <?php
   while ($row = pg_fetch_row($result)) {
-	echo "$row[0] - $row[1] - $row[2] - $row[3] - $row[4] - $row[5] - $row[6] - $row[7] - $row[8] - $row[9] - $row[10] - $row[11] - $row[12]";
-	echo "<br />\n";
-  
+ 
 ?>
 				<div class="item  col-xs-4 col-lg-4">
 					<div class="thumbnail">
