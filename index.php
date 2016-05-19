@@ -4,7 +4,9 @@ $con_string = "host=ec2-54-221-253-117.compute-1.amazonaws.com port=5432 dbname=
 
 $bdcon = pg_connect($con_string);
 
-$carros = pg_query($bdcon, "select * from Carros__c")
+$carros = pg_query($bdcon, "select * from Carros__c");
+
+echo $carros;
 
 ?>
 
