@@ -118,7 +118,7 @@ if (!$result) {
 						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
 						<div class="caption">
 							<h4 class="group inner list-group-item-heading">
-								<?php echo $row[11]; ?></h4>
+								<?php echo $row[10]; ?></h4>
 							<p class="group inner list-group-item-text">
 								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
