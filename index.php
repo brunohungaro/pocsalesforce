@@ -123,7 +123,7 @@ if (!$result) {
 								<?php 
 									//$nacionalidade = pg_query($bdcon, "select * from pocsf.nacionalidade__c");
 								?>
-								<?php echo $row[2]; ?></p>
+								<?php echo $row[1]; ?></p>
 							<div class="row">
 								<div class="col-xs-12 col-md-6">
 									<p class="lead">
