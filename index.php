@@ -115,15 +115,15 @@ if (!$result) {
 ?>
 				<div class="item  col-xs-4 col-lg-4">
 					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+						<img class="group list-group-image" src="<?php echo $row[12]; ?>" alt="" />
 						<div class="caption">
 							<h4 class="group inner list-group-item-heading">
 								<?php echo $row[10]; ?></h4>
 							<p class="group inner list-group-item-text">
 								<?php 
-									//$nacionalidade = pg_query($bdcon, "select * from pocsf.nacionalidade__c");
+									//$nacionalidade = pg_query($bdcon, "select * from pocsf.nacionalidade__c where SFID = $row[1]");
 								?>
-								<?php echo $row[12]; ?></p>
+								<?php //echo $row[12]; ?></p>
 							<div class="row">
 								<div class="col-xs-12 col-md-6">
 									<p class="lead">
