@@ -11,7 +11,7 @@ if (!$result) {
 }
 
 while ($row = pg_fetch_row($result)) {
-  echo "ID: $row[0]  Nome: $row[1]";
+  echo "$row[0] - $row[1] - $row[2] - $row[3] - $row[4] - $row[5]";
   echo "<br />\n";
 }
 
