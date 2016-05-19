@@ -125,7 +125,7 @@ if (!$result) {
 							<div class="row">
 								<div class="col-xs-12 col-md-6">
 									<p class="lead">
-										<?php echo $row[8]; ?></p>
+										<?php echo $row[7]; ?></p>
 								</div>
 								<div class="col-xs-12 col-md-6">
 									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
