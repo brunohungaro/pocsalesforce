@@ -10,11 +10,6 @@ if (!$result) {
   exit;
 }
 
-while ($row = pg_fetch_row($result)) {
-  echo "$row[0] - $row[1] - $row[2] - $row[3] - $row[4] - $row[5] - $row[6] - $row[7] - $row[8] - $row[9] - $row[10] - $row[11] - $row[12]";
-  echo "<br />\n";
-}
-
 ?>
 
 <!DOCTYPE HTML>
@@ -110,12 +105,19 @@ while ($row = pg_fetch_row($result)) {
 				</div>
 			</div>
 			<div id="products" class="row list-group">
+
+<?php
+  while ($row = pg_fetch_row($result)) {
+	echo "$row[0] - $row[1] - $row[2] - $row[3] - $row[4] - $row[5] - $row[6] - $row[7] - $row[8] - $row[9] - $row[10] - $row[11] - $row[12]";
+	echo "<br />\n";
+  
+?>
 				<div class="item  col-xs-4 col-lg-4">
 					<div class="thumbnail">
 						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
 						<div class="caption">
 							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
+								<?php echo $row[11]; ?></h4>
 							<p class="group inner list-group-item-text">
 								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -131,111 +133,9 @@ while ($row = pg_fetch_row($result)) {
 						</div>
 					</div>
 				</div>
-				<div class="item  col-xs-4 col-lg-4">
-					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-						<div class="caption">
-							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
-							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<p class="lead">
-										$21.000</p>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item  col-xs-4 col-lg-4">
-					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-						<div class="caption">
-							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
-							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<p class="lead">
-										$21.000</p>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item  col-xs-4 col-lg-4">
-					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-						<div class="caption">
-							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
-							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<p class="lead">
-										$21.000</p>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item  col-xs-4 col-lg-4">
-					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-						<div class="caption">
-							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
-							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<p class="lead">
-										$21.000</p>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item  col-xs-4 col-lg-4">
-					<div class="thumbnail">
-						<img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-						<div class="caption">
-							<h4 class="group inner list-group-item-heading">
-								Product title</h4>
-							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<p class="lead">
-										$21.000</p>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+<?php
+}
+?>
 			</div>
 		</div>
 	</body>
