@@ -6,7 +6,7 @@ $bdcon = pg_connect($con_string);
 
 $carros = pg_query($bdcon, "select * from pocsf.carro__c");
 
-echo $carros;
+echo $carros[0].name;
 
 ?>
 
