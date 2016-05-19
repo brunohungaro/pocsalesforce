@@ -4,6 +4,18 @@ $con_string = "host=ec2-54-221-253-117.compute-1.amazonaws.com port=5432 dbname=
 
 $bdcon = pg_connect($con_string);
 
+$result = pg_query($bdcon, "select * from pocsf.carro__c");
+if (!$result) {
+  echo "Erro na consulta.<br>";
+  exit;
+}
+
+while ($row = pg_fetch_row($result)) {
+  echo "ID: $row[0]  Nome: $row[1]";
+  echo "<br />\n";
+}
+
+
 $carros = pg_query($bdcon, "select name from pocsf.carro__c");
 
 echo $carros[0];
