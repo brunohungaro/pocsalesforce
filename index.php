@@ -2,7 +2,9 @@
 
 $con_string = "host=ec2-54-221-253-117.compute-1.amazonaws.com port=5432 dbname=db1ohqopoa0v9h user=wvvhtpxdeelsit password=nQAU36hPAOksIj3Clg9W3dJu2O";
 
-$bdcon4 = pg_connect($con_string);
+$bdcon = pg_connect($con_string);
+
+$carros = pg_query($bdcon, "select * from Carros__c")
 
 ?>
 
@@ -94,7 +96,7 @@ $bdcon4 = pg_connect($con_string);
 				<strong>Display</strong>
 				<div class="btn-group">
 					<a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-					</span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+					</span>Lista</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
 						class="glyphicon glyphicon-th"></span>Grid</a>
 				</div>
 			</div>
