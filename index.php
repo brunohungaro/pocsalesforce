@@ -120,8 +120,10 @@ if (!$result) {
 							<h4 class="group inner list-group-item-heading">
 								<?php echo $row[10]; ?></h4>
 							<p class="group inner list-group-item-text">
-								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-								sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<?php 
+									//$nacionalidade = pg_query($bdcon, "select * from pocsf.nacionalidade__c");
+								?>
+								<?php echo $row[4]; ?></p>
 							<div class="row">
 								<div class="col-xs-12 col-md-6">
 									<p class="lead">
